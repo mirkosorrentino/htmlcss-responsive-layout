@@ -17,6 +17,20 @@
 
 /* UTILITIES */
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--cards-color);
+    border-radius: 1.2rem;
+    /* debug */
+    min-height: 400px;
+    margin-bottom: 1rem;
+}
+
 /* COMMON */
 
 body {
@@ -39,6 +53,9 @@ header {
     width: 100%;
     background-color: var(--header-color);
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
 }
 
@@ -83,7 +100,29 @@ header {
 
 /* MAIN */
 
+.jumbotron {
+    /* debug */
+    margin-top: calc(70px + 2rem);
+}
+
 /* for Tablet (>768px) */
+@media screen and (min-width:768px) {
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        /* debug */
+        width: calc(100% / 3 - 10px);
+        margin: 1rem 5px;
+    }
+
+    .demo-app {
+        width: calc(100% / 3 * 2 - 10px);
+    }
+}
 
 /* for Desktop (992px) */
 
