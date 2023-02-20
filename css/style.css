@@ -24,7 +24,6 @@
 
 .card {
     width: 100%;
-    background-color: var(--cards-color);
     border-radius: 1.2rem;
     /* debug */
     min-height: 400px;
@@ -44,6 +43,10 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* HEADER */
@@ -111,6 +114,10 @@ header {
     margin-top: calc(70px + 2rem);
 }
 
+.jumbo-card {
+    background-color: var(--cards-color);
+}
+
 /* for Tablet (>768px) */
 @media screen and (min-width:768px) {
     .grid {
@@ -131,6 +138,72 @@ header {
 
 /* for Desktop (992px) */
 /* end jumbotron */
+
+/* strategic planning */
+.strategic-planning {
+    background-color: var(--violet-section-color);
+    width: 100%;
+
+    /* debug */
+    padding: 2rem 0;
+}
+
+.planning-title {
+    color: white;
+
+    /* debug */
+    font-size: 3rem;
+}
+
+.planning-card {
+    background-color: white;
+    width: 100%;
+    border-radius: 1.2rem;
+    /* debug */
+    min-height: 400px;
+    margin-bottom: 1rem;
+}
+
+.planning-card-title {
+    text-align: center;
+    /* debug */
+    font-size: 2.5rem;
+}
+
+.planning-paragraph {
+    font-style: italic;
+
+    /* debug */
+    font-size: 2rem;
+}
+
+.arrow-down {
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--violet-section-color);
+
+    /* debug */
+    padding: 1.2rem;
+}
+
+/* for Tablet (>768px) */
+
+/* for Desktop (992px) */
+@media screen and (min-width: 992px) {
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .strategic-planning {
+        display: flex;
+    }
+
+    .planning-side {
+        width: 50%;
+    }
+}
+/* end strategic planning */
 
 /* FOOTER */
 
