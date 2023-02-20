@@ -96,10 +96,16 @@ header {
         align-items: center;
         border-radius: 1rem;
     }
+
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 /* MAIN */
 
+/* jumbotorn */
 .jumbotron {
     /* debug */
     margin-top: calc(70px + 2rem);
@@ -107,7 +113,6 @@ header {
 
 /* for Tablet (>768px) */
 @media screen and (min-width:768px) {
-
     .grid {
         display: flex;
         flex-wrap: wrap;
@@ -125,6 +130,7 @@ header {
 }
 
 /* for Desktop (992px) */
+/* end jumbotron */
 
 /* FOOTER */
 
