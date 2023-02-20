@@ -19,12 +19,67 @@
 
 /* COMMON */
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
 
 /* HEADER */
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--header-color);
+    position: fixed;
+    z-index: 999;
+}
+
+.menu {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-symbol {
+    color: white;
+}
+
+.nav, .header-nav {
+    display: none;
+}
 
 /* for Tablet (>768px) */
 
 /* for Desktop (992px) */
+@media screen and (min-width: 992px) {
+    .hamburger {
+        display: none;
+    }
+
+    .header-nav {
+        color: white;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .header-button {
+        color: black;
+        background-color: white;
+        padding: 0.3rem 0.8rem;
+        align-items: center;
+        border-radius: 1rem;
+    }
+}
 
 /* MAIN */
 
