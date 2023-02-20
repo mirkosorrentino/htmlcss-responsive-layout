@@ -1,0 +1,39 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --header-color: #0084FD;
+    --cards-color: #B5DDFF;
+    --violet-section-color: #9792E4;
+    --free-color: #FDC15F;
+    --footer-color: #333333;
+}
+
+/* UTILITIES */
+
+/* COMMON */
+
+
+/* HEADER */
+
+/* for Tablet (>768px) */
+
+/* for Desktop (992px) */
+
+/* MAIN */
+
+/* for Tablet (>768px) */
+
+/* for Desktop (992px) */
+
+/* FOOTER */
+
+/* for Tablet (>768px) */
+
+/* for Desktop (992px) */
