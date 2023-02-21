@@ -143,7 +143,7 @@ header {
 }
 
 .long-button {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: white;
     background-color: var(--header-color);
@@ -227,6 +227,7 @@ header {
 
 .planning-card {
     background-color: white;
+    padding: 1.5rem;
 }
 
 .planning-card-title {
@@ -236,23 +237,28 @@ header {
 }
 
 .planning-paragraph {
+    font-size: 1.5rem;
     font-style: italic;
-
-    /* debug */
-    font-size: 2rem;
+    padding-bottom: 2rem;
 }
 
 .arrow-down {
-    text-align: center;
-    border-radius: 50%;
     background-color: var(--violet-section-color);
-
-    /* debug */
-    padding: 1.2rem;
+    display: inline-block;
+    padding: 1rem 1.1rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: .5rem;
+    left: 8.75rem;
 }
 
 /* for Tablet (>768px) */
-
+@media screen and (min-width: 768px) {
+    .arrow-down {
+        bottom: .625rem;
+        left: 18.75rem;
+    }
+}
 
 /* for Desktop (992px) */
 @media screen and (min-width: 992px) {
