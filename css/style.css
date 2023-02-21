@@ -170,8 +170,31 @@ header {
     .jumbotron {
         padding-top: 5rem;
     }
-}
 
+    .jumbo-card {
+        padding: 3rem 1rem;
+    }
+
+    .grid .demo-app {
+        display: flex;
+    }
+
+    .left-content {
+        width: 50%;
+    }
+
+    .right-content {
+        width: 50%;
+        position: relative;
+    }
+
+    .iphone {
+        width: 90%;
+        position: absolute;
+        bottom: -3rem;
+        right: 0;
+    }
+}
 /* end jumbotron */
 
 /* strategic planning */
