@@ -13,6 +13,8 @@
     --violet-section-color: #9792E4;
     --free-color: #FDC15F;
     --footer-color: #333333;
+    --card-title-color: #0084FD;
+    --jumbocard-paragraph-color: #607487; 
 }
 
 /* UTILITIES */
@@ -97,7 +99,7 @@ header {
         background-color: white;
         padding: 0.3rem 0.8rem;
         align-items: center;
-        border-radius: 1rem;
+        border-radius: 1.2rem;
     }
 
     .wrapper {
@@ -116,6 +118,33 @@ header {
 
 .jumbo-card {
     background-color: var(--cards-color);
+    padding: 2rem 2rem 0;
+}
+
+.jumbocard-title {
+    font-size: 1.8rem;
+    color: var(--card-title-color);
+}
+
+.jumbocard-paragraph {
+    color: var(--jumbocard-paragraph-color);
+    padding: 2rem 0;
+}
+
+.long-button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--header-color);
+    border-radius: 1.5rem;
+    padding: 0.5rem 3rem;
+    display: inline-block;
+}
+
+.iphone {
+    display: block;
+    padding-top: 1.5rem;
+    max-width: 319px;
 }
 
 /* for Tablet (>768px) */
@@ -131,7 +160,7 @@ header {
         margin: 1rem 5px;
     }
 
-    .demo-app {
+    .grid .demo-app {
         width: calc(100% / 3 * 2 - 10px);
     }
 }
