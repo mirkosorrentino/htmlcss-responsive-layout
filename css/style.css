@@ -26,7 +26,7 @@
     width: 100%;
     border-radius: 2.5rem;
     /* debug */
-    min-height: 400px;
+    min-height: 200px;
     margin-bottom: 1rem;
 }
 
@@ -125,7 +125,7 @@ header {
         flex-wrap: wrap;
     }
 
-    .card {
+    .grid .card {
         /* debug */
         width: calc(100% / 3 - 10px);
         margin: 1rem 5px;
@@ -163,9 +163,6 @@ header {
 
 .planning-card {
     background-color: white;
-    
-    /* debug */
-    margin-bottom: 1rem;
 }
 
 .planning-card-title {
@@ -192,6 +189,7 @@ header {
 
 /* for Tablet (>768px) */
 
+
 /* for Desktop (992px) */
 @media screen and (min-width: 992px) {
     .wrapper {
@@ -210,29 +208,33 @@ header {
 /* end strategic planning */
 
 /* testimonials */
+
+.testimonials {
+    padding: 4rem 0;
+}
 .testimonials-indication {
+    font-weight: 200;
     text-transform: uppercase;
     text-align: center;
-
+    padding-bottom: 1.8rem;
 }
 
 .testimonials-title {
+    font-size: 2.8rem;
     color: var(--violet-section-color);
     text-align: center;
-
-    /* debug */
-    font-size: 2.5rem;
+    padding-bottom: 1.8rem;
 }
 
 .testimonials-subtitle {
     text-align: center;
-
-    /* debug */
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
 }
 
 .testimonials-card {
     background-color: var(--violet-section-color);
+    margin-bottom: 2rem;
 }
 
 .testimonials-photo {
@@ -247,11 +249,15 @@ header {
     padding-top: 2rem;
 }
 
-.citation {
+.quotation {
     color: white;
     line-height: 2.5rem;
     font-size: 1.6rem;
     padding: 1.5rem 0;
+}
+
+.quotation-mark-left {
+    vertical-align: super;
 }
 
 .testimonials-name {
@@ -263,7 +269,34 @@ header {
 }
 
 /* for Tablet (>768px) */
+@media screen and (min-width: 768px) {
+    .testimonials-card {
+        padding: 0 1rem;
+    }
 
+    .testimonial-people {
+        padding-top: 1rem;
+    }
+
+    .testimonials-photo {
+        float: left;
+    }
+    .testimonials-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .quotation, .testimonials-name {
+        text-align: left;
+        padding-left: 12.5rem;
+    }
+
+    .quotation {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+}
 /* for Desktop (992px) */
 /* end testimonials */
 
