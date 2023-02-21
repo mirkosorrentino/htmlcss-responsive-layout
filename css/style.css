@@ -32,6 +32,10 @@
     margin-bottom: 1rem;
 }
 
+.center {
+    text-align: center;
+}
+
 /* COMMON */
 
 body {
@@ -92,13 +96,13 @@ header {
         color: white;
         display: flex;
         gap: 1rem;
+        align-items: center;
     }
 
     .header-button {
         color: black;
         background-color: white;
         padding: 0.3rem 0.8rem;
-        align-items: center;
         border-radius: 1.2rem;
     }
 
@@ -119,6 +123,13 @@ header {
 .jumbo-card {
     background-color: var(--cards-color);
     padding: 2rem 2rem 0;
+}
+
+.jumbocard-symbol {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--card-title-color);
+    padding-bottom: 1rem;
 }
 
 .jumbocard-title {
@@ -145,6 +156,7 @@ header {
     display: block;
     padding-top: 1.5rem;
     max-width: 319px;
+    width: 90%;
 }
 
 /* for Tablet (>768px) */
@@ -249,12 +261,16 @@ header {
         margin: 0 auto;
     }
 
-    .strategic-planning {
+    .flex {
         display: flex;
     }
 
     .planning-side {
         width: 50%;
+    }
+
+    .container {
+        width: 100%;
     }
 }
 /* end strategic planning */
